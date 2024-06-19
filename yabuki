@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz フォーム</title>
+</head>
+<body>
+    <h2>Quiz フォーム</h2>
+    <form action="https://admin.pm-chiba.tech/quiz.php" method="get">
+        <label for="student_id">学生番号（半角数字）:</label><br>
+        <input type="text" id="student_id" name="id" required pattern="[0-9]+" title="半角数字で入力してください"><br><br>
+        <input type="hidden" name="teacher" value="yabuki">
+        <input type="submit" value="送信">
+    </form>
+</body>
+</html>
